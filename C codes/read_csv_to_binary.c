@@ -4,7 +4,7 @@
 
     INPUT:   	mnist_test.csv mnist_train.csv
 
-    OUTPUT:		binary file with double elements
+    OUTPUT:     binary file with double elements
 
 
 
@@ -41,7 +41,7 @@ int main() {
 	int counter, count = 0, error_count = 0;
 	clock_t start = clock();
 /* For the test data */
-	char *path_file_test = "mnist_csv_test_train/mnist_test.csv"; 	// opening file
+	char *path_file_test = "../data/mnist_csv_test_train/mnist_test.csv"; 	// opening file
 	error_count++;
 	if ((fp = fopen(path_file_test,"r")) == NULL) error_function("Error reading test csv", error_count);
 	// initialization all tools 
@@ -99,7 +99,7 @@ int main() {
 
 /* For the test data */
 	
-	char *path_file_train = "mnist_csv_test_train/mnist_train.csv"; 	// opening file
+	char *path_file_train = "../data/mnist_csv_test_train/mnist_train.csv"; 	// opening file
 	error_count++;
 	if ((fp = fopen(path_file_train,"r")) == NULL) error_function("Error reading train csv", error_count);
     // initialization all tools 
@@ -180,7 +180,7 @@ int main() {
 		4 -  lab_test_modified 			 -->  	number of bites = num_test * num_output * sizeof(double)
 	*/
 	error_count++;
-	if ((fin = fopen ("train_and_test_mnist.bin", "wb")) == NULL)  error_function("Error: The output binary data file cannot be opened", error_count);
+	if ((fin = fopen ("../data/train_and_test_mnist.bin", "wb")) == NULL)  error_function("Error: The output binary data file cannot be opened", error_count);
 	printf("\nBinary file created succesfully \n");   
 	// Writing train files in blocks 
 	error_count++;
