@@ -4,7 +4,7 @@
 
     INPUT:   	mnist_test.csv mnist_train.csv
 
-    OUTPUT: 
+    OUTPUT:		binary file with double elements
 
 
 
