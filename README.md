@@ -8,8 +8,8 @@ The MNIST database contains 60,000 training images and 10,000 testing images. Ha
 
 For simplification, images has been stored in csv file. The `train.csv` has 785 columns, the fist column is the label and the rest 784 contain the pixel value of the associated image pixel. For the python notebook, instead, we'll use the comand: `from tensorflow.keras.datasets import mnist`.
 
-`train.csv` - (60000 samples) This csv file contains the pixel values as columns along with the digits it represent.
-`test.csv` - (10000 samples) File that will be used for actual evaluation for the leaderboard score and it does not have the digit represented by the pixel values.
+* `train.csv` - (60000 samples) This csv file contains the pixel values as columns along with the digits it represent.
+* `test.csv` - (10000 samples) File that will be used for actual evaluation for the leaderboard score and it does not have the digit represented by the pixel values.
 
 ## File in repository 
 
